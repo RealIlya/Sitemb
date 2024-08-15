@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  */
+.TopBar {
+    height: 72px;
+    padding-top: 24px;
+    /* margin-top: 12px; */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px 1px 2px #22222222;
+}
+
+.TopBar-Navigation {
+    /* height: 32px; */
+    margin-left: 128px;
+    display: flex;
+    align-items: center;
+
+    @media (width < 680px) {
+        margin-left: 64px;
+    }
+}
+
+.TopBar-Extra {
+    /* margin-left: 128px; */
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+
+    @media (width < 680px) {
+        .ButtonArrow {
+            border-radius: 16px;
+            font-size: 0;
+            padding: 0;
+        }
+    }
+}
+
+.TopBar-ButtonUsual {
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    color: #222222;
+    background: transparent;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    user-select: none;
+
+    i:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 4px;
+    }
+}
+
+.ButtonArrow {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 12px 24px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    transition: .2s linear;
+    user-select: none;
+
+    &:hover {
+        box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+    }
+
+    &:active {
+        color: black;
+        background-color: whitesmoke;
+        box-shadow: 0 0 0 4px white, 0 0 0 6px #5c5c5c;
+
+    }
+}
+
+.ButtonArrow-Arrow {
+    width: 18px;
+    height: 18px;
+    padding: 0 12px;
+}
+
+
+/*  */
+.Introduction {
+    color: #1E1D1D;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: ; */
+}
+
+.Introduction-LeftSide {
+    width: 45vw;
+    padding-top: 156px;
+    padding-left: 62px;
+
+    h1 {
+        width: 80%;
+        font-size: 50px;
+    }
+
+    .Welcome {
+        width: 70%;
+        display: flex;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .ButtonArrow {
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .Info {
+        display: flex;
+        margin-top: 168px;
+        color: #1E1D1DB8;
+        font-size: 12px;
+    }
+}
+
+.Introduction-RightSide {
+    min-width: 55vw;
+    display: inline-flex;
+    align-items: end;
+    background-color: #ACF8F5;
+
+    .Introduction-Card {
+        width: 30vw;
+        height: 300px;
+        /* display: inline-flex; */
+        margin-left: -15%;
+        margin-bottom: 20px;
+        border-radius: 10px 10px 0 0;
+        background-color: #FFF67F;
+    }
+}
